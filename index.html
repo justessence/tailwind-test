@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              padding: {
+                '13': '3.25rem',
+              }
+            }
+          }
+        }
+      </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        *{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-yellow-700">Belajar TailWind Css</h1>
+
+    <section class="space-x-0.5">
+        <h2 class="p-5 hover:pl-8">padding</h2>
+        <h2 class="my-5 inline-block">margin</h2>
+        <h2 class="my-5 inline-block">margin</h2>
+        <h2 class="my-5 inline-block">margin</h2>
+    </section>
+
+    <section class="py-5">
+      <h2 class="w-20 inline-block h-20">width & height</h2><br>
+      <h2 class="m-2 w-auto inline-block">width2 & height</h2>
+      <h2 class="m-2 min-w-[50%] inline-block">min-widht & height</h2>
+    </section>
+
+    <section class="py-2">
+      <h1 class="m-3 font-serif hover:font-sans hover:italic hover:bg-slate-500 hover:blur-sm text-xl font-semibold">Font : sefont-serif</h1>
+      <p class="font-mono tracking-wider ">
+        helo this is letter 
+      </p>
+      <h1 class="font-extrabold text-5xl bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
+        <span class="hover:text-transparent">Hello</span>
+        <span class="text-transparent hover:text-black">World</span>
+      </h1>
+      <div class="mt-2 w-full h-20">
+        <p class="line-clamp-3 hover:line-clamp-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, sint quia? Numquam reprehenderit minus minima ipsum quibusdam harum! Sapiente debitis eaque labore rem amet. Sed maxime accusamus magni soluta unde!</p>
+      </div>
+    </section>
+</body>
+</html>
